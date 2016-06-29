@@ -1,0 +1,312 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" 
+	"http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Canadian History- People</title>
+
+<script type="text/javascript" src="js/jquery-1.3.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.scrollTo.js"></script>
+
+<script>
+//scroll function
+$(document).ready(function() {
+
+	$('a.panel').click(function () {
+
+		$('a.panel').removeClass('selected');
+		$(this).addClass('selected');
+		
+		current = $(this);
+				
+		$('#wrapper').scrollTo($(this).attr('href'), 800);		
+		
+		return false;
+	});
+	
+	$(window).resize(function () {
+		resizePanel();
+	});
+	
+});
+
+//double action on image click
+function wikiLink(url_site) 
+{
+	alert("You are now leaving this site");
+	window.location=url_site;
+}
+</script>
+
+<!--banner information-->
+<script language="JavaScript1.1">
+// distributed by http://www,hypergurl.com
+<!-- var debug = true;
+function right(e) 
+{
+if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)) return false;
+else if (navigator.appName == 'Microsoft Internet Explorer' && (event.button == 2 || event.button == 3)) {
+alert('This page is protected');
+return false;
+}
+
+return true;
+}
+document.onmousedown=right;
+if (document.layers) window.captureEvents(Event.MOUSEDOWN);
+window.onmousedown=right;
+//-->
+</script>
+
+<!--check for colour hex codes http://html-color-codes.com/-->
+<style>
+
+body {
+	height:100%;
+	width:100%;
+	margin:0;padding:0;
+	overflow:hidden;
+	background-image:url('background.jpg');
+}
+
+#wrapper {
+	width:800px;
+	height:100%;
+	position:absolute;
+	top:18%;
+	overflow:hidden;
+}
+
+	#mask {
+		width:600%;
+		height:100%;
+		overflow:hidden;
+	}
+
+	.item {    
+		width:16.6%;    
+		height:100%;
+		float:left;    
+	}	
+	
+	.content {
+		width:680px;
+		height:600px;
+		top:0;
+		margin:0 auto;
+		position:relative;
+	}
+
+	.selected {
+		font-weight:800;
+	}
+
+</style>
+</head>
+
+<body>
+<font color="black" face="sans-serif">
+
+<!--background table/banner-->
+<div align="center">
+	<center>
+	<table border="0" width="781" cellspacing="0" cellpadding="0">
+		<tr>
+			<td height="75" bgcolor="#ccc" width="800">
+			<a href="index.htm">
+			<img border="0" src="HEADER.gif" width="800" height="75"></a></td>
+		</tr>
+	</table>
+	</center>
+	<table border="0" cellpadding="0" cellspacing="0" width="800" height="424" background image='background.jpg'>
+		<tr>
+			<td width="800" valign="top" height="27" bgcolor="#FFFFFF">
+			<b style="color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-size: medium; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;">
+			<font face="Arial Black" size="6">
+			<span style="text-decoration: none;"><a href="socialstudies.htm">
+			<font color="#000000">Back</font></a></span></font></b></td>
+		</tr>
+		<tr>
+			<td width="692" valign="top" height="500" bgcolor="#FFFFFF">
+
+	<!--scroll pages start within table-->
+			<div id="wrapper">
+			<div id="mask">
+			<!-- Macdonald-->
+					<div id="item1" class="item">
+						<div class="content">
+							<img src="PM/John_A_Macdonald_(ca._1875).jpg" align="right" width="260" height="320" 
+							onclick="wikiLink('http://en.wikipedia.org/wiki/John_A._Macdonald')"
+							alt="Photo of John A. Macdonald" title="John A. Macdonald">
+						
+						<h3>Sir John A. Macdonald</h3> 
+							<br><br><br><br>
+							First Canadian Prime Minister. 
+							<p>
+							For more information, click the image.
+							<br><br><br><br><br>
+						<font size= -1><i> All images and information from Wikipedia</i></font>	
+							<br><br><br>
+						
+							<a href="#item1" class="panel">Macdonald</a> -
+							<a href="#item2" class="panel">Borden</a> -
+							<a href="#item3" class="panel">King</a> -
+							<a href="#item4" class="panel">Pearson</a> - 
+							<a href="#item5" class="panel">Trudeau</a> -
+							<a href="#item6" class="panel">Harper</a>
+
+							</div>
+					</div>
+
+			<!--Borden-->		
+					<div id="item2" class="item">
+						<a name="item2"></a>
+						<div class="content">
+								<img src="PM/Sir_Robert_Laird_Borden,_1915.png" align="right" width="250" height="285"
+								onclick="wikiLink('http://en.wikipedia.org/wiki/Robert_Borden')"
+								alt="Photo of Sir Robert Laired Borden" title="Sir Robert Laired Borden">
+						<h3>Sir Robert Laired Borden</h3>
+						
+							<br><br><br><br>
+							Canada's Prime Minister during World War 1 
+							<p>
+							For more information, click the image. 
+							<br><br><br><br><br>
+						<font size= -1><i> All images and information from Wikipedia</i></font>
+							<br><br><br>
+						
+							<a href="#item1" class="panel">Macdonald</a> -
+							<a href="#item2" class="panel">Borden</a> -
+							<a href="#item3" class="panel">King</a> -
+							<a href="#item4" class="panel">Pearson</a> - 
+							<a href="#item5" class="panel">Trudeau</a> -
+							<a href="#item6" class="panel">Harper</a>
+						
+						</div>
+					</div>
+
+			<!--King-->
+					<div id="item3" class="item">
+						<a name="item3"></a>
+						<div class="content">
+								<img src="PM/King1941.jpg" align="right" width="250" height="300" 
+								onclick="wikiLink('http://en.wikipedia.org/wiki/William_Lyon_Mackenzie_King')"
+								alt="Photo of William Lyon Mackenzie King" title="William Lyon Mackenzie King">
+						<h3>William Lyon Mackenzie King</h3>
+							<br><br><br><br>
+							Canada's Prime Minister during World War 2			
+							<p>
+							For more information, click the image.
+							<br><br><br><br><br>
+						<font size= -1><i> All images and information from Wikipedia</i></font>
+							<br><br><br>	
+							
+							<a href="#item1" class="panel">Macdonald</a> -
+							<a href="#item2" class="panel">Borden</a> -
+							<a href="#item3" class="panel">King</a> -
+							<a href="#item4" class="panel">Pearson</a> - 
+							<a href="#item5" class="panel">Trudeau</a> -
+							<a href="#item6" class="panel">Harper</a>
+						
+						</div>
+					</div>
+
+			<!--Pearson-->		
+					<div id="item4" class="item">
+						<a name="item4"></a>
+						<div class="content">
+							<img src="PM/Lester_B._Pearson_with_a_pencil.jpg" align="right" width="250" height="300" 
+							onclick="wikiLink('http://en.wikipedia.org/wiki/Lester_B._Pearson')"
+							alt="Photo of Pearson" title="Lester B. Pearson">
+										
+						<h3>Lester Bowles Pearson</h3>
+							<br><br>
+							Prime Minister during 1963-1968.  
+							<p>
+							In 1957, he was awarded the Nobel Peace Prize with his role in resolving the Suez Crisis through the United Nation.
+							<p>
+							For more information, click the image.
+							<br><br><br><br>
+						<font size= -1><i> All images and information from Wikipedia</i></font>
+							<br><br><br>	
+							
+							<a href="#item1" class="panel">Macdonald</a> -
+							<a href="#item2" class="panel">Borden</a> -
+							<a href="#item3" class="panel">King</a> -
+							<a href="#item4" class="panel">Pearson</a> - 
+							<a href="#item5" class="panel">Trudeau</a> -
+							<a href="#item6" class="panel">Harper</a>
+
+						</div>
+					</div>
+
+			<!--Trudeau-->
+					<div id="item5" class="item">
+						<a name="item5"></a>
+						<div class="content">
+							<img src="PM/Pierre_Elliot_Trudeau.jpg" align="right" width="210" height="300" 
+							onclick="wikiLink('http://en.wikipedia.org/wiki/Pierre_Trudeau')"
+							alt="Photo Pierre Elliot Trudeau" title="Trudeau">
+						
+						<h3>Pierre Elliot Trudeau</h3>
+							<br><br><br>
+							He was the 15th Prime Minister of Canada from 1968-1979. <br>
+							He is deemed as the most popular PM of all time (re: Trudeaumania). 
+							<p>
+							For more information, click the image.
+							<br><br><br><br>
+						<font size= -1><i> All images and information from Wikipedia</i></font>
+							<br><br><br>	
+							
+							<a href="#item1" class="panel">Macdonald</a> -
+							<a href="#item2" class="panel">Borden</a> -
+							<a href="#item3" class="panel">King</a> -
+							<a href="#item4" class="panel">Pearson</a> - 
+							<a href="#item5" class="panel">Trudeau</a> -
+							<a href="#item6" class="panel">Harper</a>
+
+						</div>
+					</div>
+
+			<!--Harper-->		
+					<div id="item6" class="item">
+						<a name="item6"></a>
+						<div class="content">
+							<img src="PM/Stephen_Harper_by_Remy_Steinegger.jpg" align="right" width="210" height="300" 
+							onclick="wikiLink('http://en.wikipedia.org/wiki/Stephen_Harper')"
+							alt="Photo Steven Harper" title="Harper">	
+						
+						<h3>Steven Harper</h3>
+							<br><br><br><br>
+							Canada's current Prime Minister. <br>
+							Assumed office in 2006. 
+							Leader of Conservative Party. 
+							<p>
+							For more information, click the image.
+							<br><br><br><br>
+						<font size= -1><i> All images and information from Wikipedia</i></font>
+							<br><br><br>	
+							
+							<a href="#item1" class="panel">Macdonald</a> -
+							<a href="#item2" class="panel">Borden</a> -
+							<a href="#item3" class="panel">King</a> -
+							<a href="#item4" class="panel">Pearson</a> - 
+							<a href="#item5" class="panel">Trudeau</a> -
+							<a href="#item6" class="panel">Harper</a>
+
+						</div>
+					</div>
+					
+			<!--//-->	
+			</div>
+			</div>
+		<!--scroll pages end-->
+	</td>
+	</tr>
+	</table>
+</div>
+<!-- end-->
+
+</font>
+</body>
+</html>
