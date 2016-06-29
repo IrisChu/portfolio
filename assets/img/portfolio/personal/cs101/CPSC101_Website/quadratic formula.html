@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<head>
+<h><b> Quadratic Equation Calculator </b></h>
+<script>
+function quadratic()
+{
+var a=document.getElementById("avariable").value; 
+var b=document.getElementById("bvariable").value; 
+var c=document.getElementById("cvariable").value; 
+
+var d=((b*b)+(-4*a*c));
+var x1=((-b + Math.sqrt(d))/(2*a));
+var x2=((-b - Math.sqrt(d))/(2*a));
+
+if (a==0) {
+alert("the value of "+a+" can never be 0 :/ either your prof is giving you a trick question or you read the question wrong!")
+}
+
+if (d>0)
+{
+alert("The values of x are " + x1 +" and " + x2 +".")
+}
+
+if (d==0)
+{
+alert("The value of x is " + x1 +".")
+}
+
+if (d<0)
+{
+alert("This problem is imaginary. X is undefined.")
+}
+
+}
+</script>
+</head> 
+
+<body>
+<p> Value of a: <input type"number" id="avariable">
+	Value of b: <input type"number" id="bvariable">
+	Value of c: <input type"number" id="cvariable">
+</p>
+<button onclick="quadratic()"> Click this to find the values of x. 
+</button>
+
+<br clear="all">
+<form name="Calc">
+<table border="4">
+<tr>
+<td>
+<input type="text" name="Numbers" size="16" />
+</td>
+</tr>
+<tr>
+<td>
+<input type="button" value="  1  " onClick="document.Calc.Numbers.value += '1'" />
+<input type="button" value="  2  " onClick="document.Calc.Numbers.value += '2'" />
+<input type="button" value="  3  " onClick="document.Calc.Numbers.value += '3'" />
+<input type="button" value="  +  " onClick="document.Calc.Numbers.value += ' + '" />
+<br />
+<input type="button" value="  4  " onClick="document.Calc.Numbers.value += '4'" />
+<input type="button" value="  5  " onClick="document.Calc.Numbers.value += '5'" />
+<input type="button" value="  6  " onClick="document.Calc.Numbers.value += '6'" />
+<input type="button" value="  -  " onClick="document.Calc.Numbers.value += ' - '" />
+<br />
+<input type="button" value="  7  " onClick="document.Calc.Numbers.value += '7'" />
+<input type="button" value="  8  " onClick="document.Calc.Numbers.value += '8'" />
+<input type="button" value="  9  " onClick="document.Calc.Numbers.value += '9'" />
+<input type="button" value="  x  " onClick="document.Calc.Numbers.value += ' * '" />
+<br />
+<input type="button" value="  C  " onClick="document.Calc.Numbers.value = ''" />
+<input type="button" value="  0  " onClick="document.Calc.Numbers.value += '0'" />
+<input type="button" value="  =  " onClick="document.Calc.Numbers.value = eval(Calc.Numbers.value)" />
+<input type="button" value="  /  " onClick="document.Calc.Numbers.value += ' / '" />
+</td>
+</tr>
+
+</table>
+</form>
+
+<br clear="all">
+	<hr>
+	<h1><center>math videos</center></h1>
+	
+	<p> Khan Academy video: Introduction to Calculus </p>
+<iframe width="600" height="400"
+src="http://www.youtube.com/watch?v=YJHlrcUV09M&playnext=1&list=PL3748E9B2775D2FE9&feature=results_main">
+</iframe>
+
+<br clear="all">
+	<p> Khan Academy: the beauty of Algebra </p>
+<iframe width="600" height="400"
+src="http://www.youtube.com/watch?v=kpCJyQ2usJ4">
+</iframe>
+
+<br clear="all">
+	<p> Khan Academy video on Vectors and Scalars </p>
+<iframe width="600" height="400"
+src="https://www.youtube.com/watch?v=ihNZlp7iUHE">
+</iframe>
+
+<br clear="all">
+	<
+
+</body> 
+</html>

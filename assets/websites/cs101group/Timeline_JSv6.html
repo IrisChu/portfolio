@@ -1,0 +1,298 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+
+<title>Canadian Flags</title>
+
+<script type="text/javascript" src="js/jquery-1.3.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.scrollTo.js"></script>
+
+<script>
+//scroll function
+$(document).ready(function() {
+
+	$('a.panel').click(function () {
+
+		$('a.panel').removeClass('selected');
+		$(this).addClass('selected');
+		
+		current = $(this);
+				
+		$('#wrapper').scrollTo($(this).attr('href'), 700);		
+		
+		return false;
+	});
+	
+	$(window).resize(function () {
+		resizePanel();
+	});
+	
+});
+</script>
+
+<script type="text/javascript">
+
+//1868
+function showText(txt)
+{
+document.getElementById("write").innerHTML=txt;
+}
+
+//1921
+function showText2(txt)
+{
+document.getElementById("write2").innerHTML=txt;
+}
+
+//1957
+function showText3(txt)
+{
+document.getElementById("write3").innerHTML=txt;
+}
+
+//proposed flag
+function showText4(txt)
+{
+document.getElementById("write4").innerHTML=txt;
+}
+
+//current flag
+function showText5(txt)
+{
+document.getElementById("write5").innerHTML=txt;
+}
+
+</script>
+
+
+<!--banner information-->
+<script language="JavaScript1.1">
+// distributed by http://www,hypergurl.com
+<!-- var debug = true;
+function right(e) 
+{
+if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)) return false;
+else if (navigator.appName == 'Microsoft Internet Explorer' && (event.button == 2 || event.button == 3)) {
+alert('This page is protected');
+return false;
+}
+
+return true;
+}
+document.onmousedown=right;
+if (document.layers) window.captureEvents(Event.MOUSEDOWN);
+window.onmousedown=right;
+//-->
+</script>
+
+
+<style>
+body {
+	margin:0;padding:0;
+	background-image:url('background.jpg');
+}
+
+#wrapper {
+	height:600px;
+	position:absolute;
+	top:15%;
+	overflow:auto;
+}
+
+	#mask {
+		width:100%;
+		height:500%;
+	}
+
+	.item {
+		width:100%;
+		height:20%;
+		float:right;
+
+	}	
+	
+	.content {
+		width:700px;
+		height:400px;
+		background-color:white;
+	}
+	
+	.selected {
+		font-weight:700;
+	}
+
+</style>
+</head>
+ 
+<body>
+<font color="black" face="sans-serif">
+
+
+<!--background table/banner and white space-->
+<div align="center">
+	<center>
+	<table border="0" width="781" cellspacing="0" cellpadding="0">
+		<tr>
+			<td height="75" bgcolor="#ccc" width="800">
+			<a href="noaccess.html">
+			<img border="0" src="HEADER.gif" width="800" height="75"></a></td>
+		</tr>
+	</table>
+	</center>
+	<table border="0" cellpadding="0" cellspacing="0" width="800" height="424" background image='background.jpg'>
+		<tr>
+			<td width="800" valign="top" height="27" bordercolor="#FFFFFF" bgcolor="#FFFFFF">
+			<b style="color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-size: medium; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;">
+			<font face="Arial Black" size="6">
+			<span style="text-decoration: none;"><a href="socialstudies.htm">
+			<font color="#000000">Back</font></a></span></font></b></td>
+		</tr>
+		<tr>
+			<td width="692" valign="top" height="660" bgcolor="#FFFFFF">
+			
+	<!--Information-->
+		<tr>
+			<div id="wrapper">
+			<div id="mask">	
+				<!--TITLE-->
+					<div id="item1">
+						<a name="item1"></a>	
+							<h1>Timeline of Canadian Flags</h1>
+
+								<a href="#item2" class="panel">1868</a> | 
+								<a href="#item3" class="panel">1921</a> | 
+								<a href="#item4" class="panel">1957</a> | 
+								<a href="#item5" class="panel">Flag Proposal</a> | 
+								<a href="#item6" class="panel">Current Flag</a>
+								<br>
+								<br>
+					</div>
+					
+				<!--1. 1868-->		
+						<div id="item2" class="item">
+							<a name="item2"></a>			
+							<div class="content">
+								<br>
+								<strong>Canadian Red Ensign 1868-1921</strong>
+								<br><br>
+								<img src="flags/Canadian_Red_Ensign_1868-1921.png"  width="600" height="300"
+								onclick="showText('<br>De facto National Flag- Red Ensign defaced with the arms of the four original provinces of Canada')"
+								onmouseout= "showText('<br>Click the flag!')"
+								alt="Unoffical Flag of 1868-1921"> 
+						<p id="write">
+							<br>
+							Click the flag to find out more about it!</p>			
+						
+						<a href="#item1" class="panel">Back to top</a>
+					
+							</div>
+						</div>
+					
+					
+				<!--2. 1921-->
+						<div id="item3" class="item">
+							<a name="item3"></a>
+							<div class="content">
+								<br>
+								<strong>Canadian Red Ensign 1921-1957</strong>
+								<br><br>
+								
+								<img src="flags/Canadian_Red_Ensign_1921-1957.png" width="600" height="300"
+								onclick="showText2('<br>De facto National Flag- Red Ensign defaced with the Royal Arms of Canada. The maple leaves at the bottom of the shield are green.')"
+								onmouseout= "showText2('<br>Click the flag!')"
+								alt="Unoffical National Flag of 1921-1957">
+						
+						<p id="write2">
+							<br>
+							Click the flag to find out more about it!</p>	
+							
+						<a href="#item1" class="panel">Back to top</a>
+							
+							</div>
+						</div>
+
+						
+				<!--3. 1957-->	
+						<div id="item4" class="item">
+							<a name="item4"></a>
+							<div class="content">
+								<br>
+								<strong>Canadian Red Ensign 1957-1965</strong>
+								<br><br>
+			
+								<img src="flags/Canadian_Red_Ensign_1957-1965.png" width="600" height="300"
+								onclick="showText3('<br>De facto National Flag- Red Ensign defaced with the Royal Arms of Canada. The maple leaves at the bottom of the shield are red.')"
+								onmouseout= "showText3('<br>Click the flag!')"
+								alt="Unoffical National Flag of 1957-1965">
+								
+						<p id="write3">
+							<br>
+							Click the flag to find out more about it!</p>	
+						
+						<a href="#item1" class="panel">Back to top</a>
+						
+							</div>
+						</div>
+						
+						
+				<!--4. FLAG PROPOSAL-->
+						<div id="item5" class="item">
+							<a name="item5"></a>
+							<div class="content"> 
+								<br>
+								<strong>Propsal of 1964</strong>
+								<br><br>
+								
+								<img src="flags/Canada_Pearson_Pennant_1964.png" width="600" height="300"
+								onclick="showText4('<br>Proposed Flag for Canada, known as the Pearson Pennant')"
+								onmouseout= "showText4('<br>Click the flag!')"
+								alt="Proposed Flag of 1964">
+								
+						<p id="write4">
+							<br>
+							Click the flag to find out more about it!</p>	
+						
+						<a href="#item1" class="panel">Back to top</a>
+						
+							</div>
+						</div>
+						
+						
+				<!--5. CURRENT FLAG-->
+						<div id="item6" class="item">
+							<a name="item6"></a>
+							<div class="content">
+								<br>
+								<strong>1965</strong>
+								<br><br>
+								
+								<img src="flags/Flag_of_Canada.svg.png" width="600" height="300"
+								onclick="showText5('<br>Current National Flag of Canada')"
+								onmouseout= "showText5('<br>Click the flag!')"
+								alt="Current Flag since 1965">
+									
+							<p id="write5">
+								<br>
+								Click the flag to find out more about it!</p>	
+						
+							<a href="#item1" class="panel">Back to top</a><br>
+						
+							</div>
+						</div>
+			</div>
+			</div>
+		
+			<td align="center"><br><br>
+			<font size= -1><i> All images and information from Wikipedia's "Flag of Canada" <a href="http://en.wikipedia.org/wiki/Flag_of_Canada">page</a> 
+						and Wikipedia's "List of Canadian Flags" <a href="http://en.wikipedia.org/wiki/List_of_Canadian_flags">page</a> </i></font>
+			
+			</td>
+			
+		</td>
+		</tr>	
+	</table>
+</div>
+<!-- end-->
+</font>
+</body>
+</html>
