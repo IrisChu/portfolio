@@ -8,7 +8,6 @@
  */
 
  /*custom*/
- 
  .col-lg-4 {
     width: 32%;
     display: inline-block;
@@ -97,13 +96,13 @@ a:after {
 }
 
 .navbar-inverse {
-	padding-bottom: 70px;
+	padding-bottom: 0;
 	padding-top: 70px;
 }
 
 .navbar-inverse {
 	background-color: #539AD0;
-	border-color: #16a085;
+	border-color: #e0e0e0;
 }
 
 .navbar-inverse .navbar-nav > li > a {
@@ -246,4 +245,11 @@ bt {
 .glyphicon {
 	font-size: 40px;
 	color: #1abc9c;
+}
+
+@media (max-width: 768px) {
+  .navbar-collapse, navbar-inverse {
+    background-color: #cad4dc;
+ 	border-color: #e0e0e0!important;
+  }
 }
