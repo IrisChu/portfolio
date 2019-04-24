@@ -1,255 +1,78 @@
-/*
- * Author: Carlos Alvarez
- * URL: http://alvarez.is
- *
- * Project Name: STANLEY - Free Bootstrap 3 Theme
- * Version: 1.0
- * URL: http://blacktie.co
- */
-
- /*custom*/
- .col-lg-4 {
-    width: 32%;
-    display: inline-block;
-    vertical-align: top;
-	text-align: center;
-}
- 
-body {
-  	background-color: #ffffff;
-  	font-family: Arial, sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    color: #555;
-
-    -webkit-font-smoothing: antialiased;
-    -webkit-overflow-scrolling: touch;
+.container {
+  text-align: center;
+  width: 80%;
 }
 
-/* Titles */
-h1, h2, h3, h4, h5, h6 {
-	font-family: Arial, sans-serif;
-    font-weight: 700;
-    color: #333;
+.content-box {
+  background-color: #eeeeee73;
+  border-radius: 10px;
+  padding: 3em;
+  margin: 2em auto;
 }
 
-h1 {
-	font-size: 35px;
-	margin-top: 30px;
-	margin-bottom: 30px;
+.project-icon {
+  display: inline-block;
+  margin-bottom: 4em;
+  max-width: 50%;
 }
 
-
-
-/* Paragraph & Typographic */
-p {
-    line-height: 28px;
-    margin-bottom: 25px;
-    font-size: 16px;
+.project-icon img {
+  height: 250px;
 }
 
-.centered {
-    text-align: center;
+#footer {
+  background-color: #444;
+  color: #ccc;
+  padding: 2em;
+  text-align: right;
 }
 
-/* Links */
-a {
-    color: #539AD0;
-    word-wrap: break-word;
-
-    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
-    transition: color 0.1s ease-in, background 0.1s ease-in;
-}
-
-a:hover,
-a:focus {
-    color: #7b7b7b;
-    text-decoration: none;
-    outline: 0;
-}
-
-a:before,
-a:after {
-    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
-    transition: color 0.1s ease-in, background 0.1s ease-in;
-}
-
- hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
-
+/** NAVBAR **/
 .navbar {
-	text-transform: uppercase;
-	margin-bottom: 0px;
+  text-transform: uppercase;
+  margin-bottom: 0px;
 }
 
 .navbar-inverse {
-	padding-bottom: 0;
-	padding-top: 70px;
+  padding-bottom: 0;
+  padding-top: 70px;
 }
 
 .navbar-inverse {
-	background-color: #539AD0;
-	border-color: #e0e0e0;
+  background-color: #539AD0;
+  border-color: #e0e0e0;
 }
 
 .navbar-inverse .navbar-nav > li > a {
-	color: white;
+  color: white;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover {
-	color: #222222;
+  color: #222222;
 }
 
 .navbar-brand {
-	font-weight: 700;
-	font-size: 20px;
-	letter-spacing: 2px;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 2px;
 }
 
 .navbar-inverse .navbar-brand {
-	color: white;
+  color: white;
 }
 
 .navbar-inverse .navbar-toggle {
-	border-color: transparent;
-}
-
-.progress-bar-theme {
-  background-color: #1abc9c;
-}
-
-
-/* Helpers */
-
-.mt {
-	margin-top: 40px;
-	margin-bottom: 40px;
-}
-
-.pt {
-	padding-top: 50px;
-	padding-bottom: 50px;
-}
-
-
-/* +++++ WRAP SECTIONS +++++ */
-
-#ww {
-	padding-top: 70px;
-	padding-bottom: 70px;
-	background-color: #f2f2f2;
-}
-
-
-#footer {
-	background-color: #2f2f2f;
-	padding-top: 50px;
-	padding-bottom: 50px; 
-}
-
-#footer p {
-	color: white;
-}
-
-#footer h4 {
-	color: white;
-	text-transform: uppercase;
-	padding-bottom: 20px;
-}
-
-
-/* +++++ Color Wraps / Blog Page +++++ */
-
-#grey {
-	padding-top: 60px;
-	padding-bottom: 60px;
-	background-color: #f2f2f2;
-}
-
-#white {
-	padding-top: 60px;
-	padding-bottom: 60px;
-	background-color: #ffffff;
-}
-
-
-
-/* Blog Date*/
-bd {
-	font-size: 12px;
-	text-transform: uppercase;
-	color: #d2d2d2;
-	font-weight: 700;
-}
-
-/* Blog Author*/
-ba {
-	font-size: 12px;
-	text-transform: uppercase;
-}
-
-/* Blog Quote */
-.bq {
-	font-size: 22px;
-	padding-top: 30px;
-}
-
-/* Blog Tags */
-bt {
-	font-size: 12px;
-}
-
-/* ================== PORTFOLIO IMAGES HOVER EFFECT ================== */
-/* Effects also are controled by hover.zoom.js */
-.zoom { 
-    display:block; 
-    position:relative; 
-    overflow:hidden; 
-    background:transparent url(../img/loader.gif) no-repeat center;
-}
-
-
-    .zoomOverlay {
-        position:absolute;
-        top:0; left:0;
-        bottom:0; right:0;
-        display:none;
-        background-image:url(../img/zoom.png);
-        background-repeat:no-repeat;
-        background-position:center;
-    }
-
-.zoom2 {
-	opacity: 1;
-}
-
-.zoom2:hover {
-	opacity: 0.5;
-}
-
-/* glyphicon Configuration */
-
-.glyphicon {
-	font-size: 40px;
-	color: #1abc9c;
+  border-color: transparent;
 }
 
 @media (max-width: 768px) {
   .navbar-collapse, navbar-inverse {
     background-color: #cad4dc;
- 	border-color: #e0e0e0!important;
+    border-color: #e0e0e0!important;
   }
+}
+
+/** ABOUT PAGE **/
+.progress-bar-theme {
+  background-color: #1abc9c;
 }
