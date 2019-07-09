@@ -16,6 +16,7 @@ document.write('\
                     <span class="icon-bar"></span>\
                     <span class="icon-bar"></span>\
                 </button>\
+                <img class="navbar-brand navbar-icon" src="assets/img/userIcon.png">\
                 <a class="navbar-brand" href="index.html">IRIS CHU</a>\
             </div>\
             <div class="navbar-collapse collapse">\

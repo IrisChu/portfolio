@@ -1,21 +1,195 @@
-<script src="assets/js/header.js"></script>
-<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Iris Chu</title>
+  <link href="assets/css/bootstrap.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+</head>
+<div class="navbar navbar-inverse navbar-static-top">
   <div class="container">
-      <img class="img-circle" src="assets/img/user.png" alt="Iris" height="300" width="300">
-      <h2>Hello!</h2>
-      <p>My name is Iris! アイリスと申します。<br>
-        I have over 3 years of experience as a software developer. <br>
-        2019の秋に日本に引っ越すつもりです。</p>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <img class="navbar-brand navbar-icon" src="assets/img/userIcon.png">
+      <a class="navbar-brand" href="index.html">IRIS CHU</a>
     </div>
-    <div class="container content-box">
-      <h1>Projects</h1>
-        <h3>Websites</h3>
-        <a class="project-icon" href="websites.html"><img src="assets/img/portfolio/personal/akachanname.PNG" alt="websites"/></a>
-        <h3>Mobile</h3>
-        <a class="project-icon" href="mobile.html"><img src="assets/img/portfolio/academic/CPSC210_Project/academic210_4.png" alt="" /></a>
-        <h3>Games</h3>
-        <a class="project-icon" href="game.html"><img src="assets/img/portfolio/personal/game1.png" alt=""/></a>
-        <p>note: these are highlights from my personal and academic projects only.</p>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+      </ul>
     </div>
-</body>
-<script src="assets/js/footer.js"></script>
+  </div>
+</div>
+<body>
+  <div class="container intro">
+    <img class="col-lg-6 profile-picture img-circle" src="assets/img/profile.jpg" alt="Iris">
+    <div class="col-lg-6 intro-text">
+      <p>Hello! My name is Iris. <br>
+        I am an experienced software developer with a knack for tracing and resolving problems.
+        And I am looking to join a new team in Japan starting at the end of 2019.
+      </p>
+      <p>初めまして。アイリスと申します。<br>
+        ソフトウェアプログラマーで3年以上の経験があります。<br>
+        2019の秋に日本に引っ越しますから日本のソフトウエア会社で働きたいです。
+      </p>
+    </div>
+  </div>
+  <section id="projects" class="container content-box">
+    <h1>Personal and Academic Projects</h1>
+    <div class="row">
+      <h2>Websites</h2>
+      <div class="col-lg-4">
+        <h4>Akachan Name</h4>
+        <a href="https://akachanname.com/"><img class="project-icon" src="assets/img/portfolio/personal/akachanname.PNG" alt="akachanname"></a>
+        <a href="https://github.com/IrisChu/akachanname">GitHub Link</a>
+        <p>This is a new website that I'm working for fun. It's still a work in progress.</p>
+      </div>
+      <div class="col-lg-4">
+        <h4>Pokedex DB</h4>
+        <a href="websites_pokedexDB.html"><img class="project-icon" src="assets/img/portfolio/academic/CPSC304_Project.png" alt="pokeDB"/></a>
+        <a href="https://github.com/IrisChu/VIKD">GitHub Link</a><br>
+      </div>
+      <div class="col-lg-4">
+        <h4>Website #0: Spring 2013</h4>
+        <a href="assets/websites/cs101individual/index.html"><img class="project-icon" src="assets/img/portfolio/personal/web0.png" alt="web #0"></a>
+        <p>My first ever website</p>
+      </div>
+    </div>
+    <div class="row">
+      <h2>Mobile</h2>
+      <div class="col-lg-6">
+        <h4>PCI Community Application</h4>
+        <a href="http://blogs.thecdm.ca/arch/">Project Blog</a><br>
+        <a class="project-icon" href="https://www.youtube.com/watch?v=WytyQphiItgl"><img src="assets/img/portfolio/academic/gnw.jpg" alt="" /></a><br>
+      </div>
+      <div class="col-lg-6">
+        <h4>Translink Appliciation</h4>
+        <a class="project-icon" href="mobile_bus.html"><img src="assets/img/portfolio/academic/CPSC210_Project/academic210_4.png" alt="" /></a>
+      </div>
+    </div>
+    <div class="row">
+      <h2>Games</h2>
+      <a class="project-icon" href="game.html"><img src="assets/img/portfolio/personal/game1.png" alt=""/></a>
+    </div>
+  </section>
+  <section id="skills" class="container">
+    <h1>Technical Skills</h1>
+    <div class="row mt">
+      <div class="col-lg-6">
+        <h2>Languages</h2>
+        Java
+        <div class="progress">
+          <div class="progress-bar progress-bar-theme" style="width: 75%;"></div>
+        </div>
+        JavaScript
+        <div class="progress">
+          <div class="progress-bar progress-bar-theme" style="width: 80%;"></div>
+        </div>
+        HTML5 & CSS3
+        <div class="progress">
+          <div class="progress-bar progress-bar-theme" style="width: 95%;"></div>
+        </div>
+        PHP
+        <div class="progress">
+          <div class="progress-bar progress-bar-theme" style="width: 80%;"></div>
+        </div>
+        C#
+        <div class="progress">
+          <div class="progress-bar progress-bar-theme" style="width: 60%;"></div>
+        </div>
+      </div>
+      <div class="col-lg-6 text-container">
+        <h2>Other Technologies</h2>
+        <ul>
+          <li>Databases
+            <ul>
+              <li>MySQL</li>
+              <li>Microsoft SQL Server</li>
+            </ul>
+          </li>
+          <li>Git
+            <ul>
+              <li>BitBucket</li>
+              <li>GitHub</li>
+            </ul>
+          </li>
+          <li>IDEs
+            <ul>
+              <li>PhpStorm</li>
+              <li>Visual Studio</li>
+              <li>Atom</li>
+            </ul>
+          </li>
+          <li>Environment
+            <ul>
+              <li>Linux VM with VMware</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="experience" class="container content-box text-container">
+      <h1>Work Experience</h1>
+      <h3>Junior Full-Stack Developer</h3>
+      <h4>Gravit-e Technologies, a software consulting company</h4>
+      May 2017 - Present
+      <ul>
+        <li>Handle production releases and client communications</li>
+        <li>Design and program internal tools to improve workflow processes</li>
+        <ul>
+          <li>Release tool: from 30mins to 5mins</li>
+          <li>Data change request tool: from 5mins to ~1 second</li>
+        </ul>
+        <li>Support 50+ production projects</li>
+        <ul>
+          <li>Resolve various time-sensitive production issues and errors</li>
+          <li>Implement new features to improve clients’ business workflows</li>
+          <li>Develop APIs for clients with external applications</li>
+        </ul>
+        <li>Stabilize legacy projects</li>
+        <ul>
+          <li>Improve authentication</li>
+          <li>Upgrade libraries and language versions</li>
+          <li>Fix functionality issues</li>
+          <li>Add version control</li>
+          <li>Modernize user interface</li>
+        </ul>
+      </ul>
+
+      <h3>Web Application Developer Co-op</h3>
+      <h4>Gravit-e Technologies, a software consulting company</h4>
+      Sep 2016 - Dec 2016
+      <ul>
+        <li>Implemented back-end logic for critical features of a new custom web application for a client </li>
+        <li>Investigated and fixed technical issues (both front-end and back-end) for existing projects </li>
+        <li>Researched and experimented with new technologies to help improve internal process for developing projects</li>
+      </ul>
+      <h3>IM/IT Project Assistant</h3>
+      <h4>IM/IT Department at Child Family Research Institute</h4>
+      May 2016 - Aug 2016
+      <ul>
+        <li>Led development for new internal IT help page with KnockoutJS</li>
+        <li>Designed and implemented database applications with Oracle APEX</li>
+        <li>Customized WordPress themes and plugins</li>
+      </ul>
+
+      <h3>Junior Software Developer</h3>
+      <h4>Ensemble Systems Inc, a software consulting company</h4>
+      Jul 2015 - May 2016
+      <ul>
+        <li>Developed two web applications as the main developer using AngularJS for front-end, Java and RESTful (jersey) services for back-end, and MySQL</li>
+        <li>Researched new technology and APIs to create prototypes/templates</li>
+      </ul>
+    </section>
+  </body>
+  <footer>
+    <div id="footer">Find Iris on <a href="http://www.linkedin.com/in/chuiris">LinkedIn</a></div>
+    <script src="assets/js/bootstrap.min.js"></script>
+  </footer>
