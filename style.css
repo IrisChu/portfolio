@@ -1,5 +1,8 @@
-body {
+html {
   scroll-behavior: smooth;
+}
+
+body {
   margin: 0;
   font-family: sans-serif;
 }
@@ -54,12 +57,13 @@ body {
   width: 15em;
   border: 1px solid transparent;
   border-radius: 10px;
-  right: 55%;
+  right: 60%;
   top: 5em;
   position: absolute;
 }
 
 #intro p {
+  font-size: 18px;
   width: 45%;
   border: 1px solid #ccc;
   border-radius: 10px;
@@ -67,10 +71,30 @@ body {
   background-color: #666;
   padding: 1em;
   position: absolute;
-  top: 7em;
-  left: 48%;
+  top: 3.5em;
+  left: 43%;
   color: #fff;
   letter-spacing: 1px;
+}
+
+#linkedinLogo, #githubLogo {
+  position: absolute;
+}
+
+#linkedinLogo:hover, #githubLogo:hover {
+  opacity: 0.5;
+}
+
+#linkedinLogo {
+  bottom: 5em;
+  height: 3em;
+  left: 48%;
+}
+
+#githubLogo {
+  bottom: 4.5em;
+  height: 4em;
+  left: 75%;
 }
 
 /*----------------------*/
@@ -119,6 +143,7 @@ body {
 
 #skills-picture {
   width: 100%;
+  margin-bottom: 3em;
 }
 
 /*----------------------*/
@@ -161,4 +186,16 @@ body {
 
 #footer:hover #profile-label {
   opacity: 1;
+}
+
+#topLink {
+  text-decoration: none;
+  color: #fff;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+}
+
+#topLink:hover {
+  opacity: 0.5;
 }
