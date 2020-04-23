@@ -1,10 +1,13 @@
 html {
   scroll-behavior: smooth;
+  background-color: #ddd;
 }
 
 body {
   margin: 0;
   font-family: sans-serif;
+  max-width: 1080px;
+  margin: auto;
 }
 
 /*----------------------*/
@@ -44,7 +47,7 @@ body {
 
 /*----------------------*/
 #intro {
-  background-color: #ccc;
+  background-color: #eee;
   padding: 2em 0;
   margin: 0;
   width: 100%;
@@ -62,7 +65,7 @@ body {
   position: absolute;
 }
 
-#intro p {
+.speechbubble {
   font-size: 18px;
   width: 45%;
   border: 1px solid #ccc;
@@ -75,6 +78,13 @@ body {
   left: 43%;
   color: #fff;
   letter-spacing: 1px;
+}
+.speechbubble .arrow {
+    border-style: solid;
+    position: absolute;
+    border-color:  transparent  transparent transparent #666;
+    border-width:  0px 12px 12px 12px;
+    bottom: -12px;
 }
 
 #linkedinLogo, #githubLogo {
@@ -120,7 +130,7 @@ body {
 
 #projects {
   text-align: center;
-  background-color: #eee;
+  background-color: #ddd;
   margin: 0;
   padding: 1em 0;
 }
@@ -138,7 +148,8 @@ body {
 
 
 #skills {
-  text-align: center;s
+  text-align: center;
+  background-color: #fff;
 }
 
 #skills-picture {
