@@ -5,7 +5,7 @@ html {
 
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: Helvetica, Arial;
   max-width: 1080px;
   margin: auto;
 }
@@ -38,7 +38,6 @@ body {
   font-size: 20px;
   letter-spacing: 2px;
   padding: 0 2em;
-  font-family: monospace;
 }
 
 .navbar-items a:hover {
@@ -74,7 +73,7 @@ body {
   background-color: #666;
   padding: 1em;
   position: absolute;
-  top: 3.5em;
+  top: 1.5em;
   left: 43%;
   color: #fff;
   letter-spacing: 1px;
@@ -87,33 +86,37 @@ body {
     bottom: -12px;
 }
 
-#linkedinLogo, #githubLogo {
+.contactIcon {
   position: absolute;
 }
 
-#linkedinLogo:hover, #githubLogo:hover {
+.contactIcon:hover {
   opacity: 0.5;
 }
 
 #linkedinLogo {
-  bottom: 5em;
-  height: 3em;
-  left: 48%;
+  bottom: 3em;
+  height: 2em;
+  left: 60%;
 }
 
 #githubLogo {
-  bottom: 4.5em;
+  bottom: 2.5em;
+  height: 3em;
+  left: 85%;
+}
+
+#emailLogo {
+  bottom: 2em;
   height: 4em;
-  left: 75%;
+  left: 45%;
 }
 
 /*----------------------*/
 .section-header {
-  text-transform: uppercase;
   font-weight: 700;
   font-size: 40px;
   letter-spacing: 2px;
-  font-family: monospace;
   padding-top: 1em;
 }
 
@@ -159,7 +162,6 @@ body {
 
 /*----------------------*/
 #footer {
-  font-family: monospace;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 20px;
