@@ -16,21 +16,23 @@
   </div>
   <section id="intro">
     <img id="profile-picture" src="images/profile.png" alt="Iris Chu" />
-    <div class="speechbubble">
+    <div id="speechbubble_height"></div>
+    <div id="speechbubble">
       <div class="arrow"></div>
       <p>
-        Hi, I'm Iris! I love designing and programming websites that look good and work well.
+        Hi, I'm Iris! I'm a web app developer.
       </p>
       <p>
-        Let me help you bring your brand online or establish a stronger online presence!
+        I've worked in a wide variety of areas, including business flow tools, customer facing web apps, APIs, and more.
       </p>
       <p>
-        Contact me for a free 30min consultation call.
+        I'm always open to chat about new technologies and opportunities, especially if it's based in Osaka, Japan!
       </p>
     </div>
-    <a href="https://www.linkedin.com/in/chuiris/"><img class="contactIcon" id="linkedinLogo" src="images/linkedin.png" alt="LinkedIn" /></a>
-    <a href="https://github.com/IrisChu"><img class="contactIcon" id="githubLogo" src="images/github.png" alt="GitHub" /></a>
-    <a href="mailto:contact.iris.chu@gmail.com"><img class="contactIcon" id="emailLogo" src="images/email.png" alt="Email" /></a>
+    <div class="contactInfo">
+      <a href="https://www.linkedin.com/in/chuiris/"><img class="contactIcon" id="linkedinLogo" src="images/linkedin.png" alt="LinkedIn" /></a>
+      <a href="https://github.com/IrisChu"><img class="contactIcon" id="githubLogo" src="images/github.png" alt="GitHub" /></a>
+    </div>
   </section>
   <section id="projects">
     <h1 class="section-header">- Examples of my work -</h1>
@@ -85,3 +87,9 @@
     <a href="#header"><span id="topLink">^top</span> </a>
   </div>
   </footer>
+
+  <script>
+    var speechBubble = document.getElementById('speechbubble').offsetHeight;
+    var speechBubble_height = document.getElementById('speechbubble_height');
+    speechBubble_height.style.height = speechBubble + 5 + "px";
+  </script>
